@@ -5,13 +5,13 @@
 class Zr < Formula
   desc "Zuora CLI - Work with Zuora from the command line"
   homepage "https://github.com/matsuzj/zuora-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.1/zr_0.2.1_darwin_amd64.tar.gz"
-      sha256 "3027ba91e4fc65689f8252d2f3dc8cfb9b5b0af08f03f604237842fb6898cd42"
+      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.2/zr_0.2.2_darwin_amd64.tar.gz"
+      sha256 "d205df90b7fbdb81da5ff7e6a772ba3ee22db35e7e539321084f64451feb440d"
 
       define_method(:install) do
         bin.install "zr"
@@ -21,8 +21,8 @@ class Zr < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.1/zr_0.2.1_darwin_arm64.tar.gz"
-      sha256 "af3ad819d38c7fd11d829b8f723f21292ff113f8e5f020396dc284b1b8270db1"
+      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.2/zr_0.2.2_darwin_arm64.tar.gz"
+      sha256 "c9dde040184d3c244d22fbff0ac1609d12ec7ce142574524652e286cffb38c9c"
 
       define_method(:install) do
         bin.install "zr"
@@ -35,8 +35,8 @@ class Zr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.1/zr_0.2.1_linux_amd64.tar.gz"
-      sha256 "ce8cea1eeae1fb591e9ec593816e1ca6509293eba09f4ca4cecc20e86bc69315"
+      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.2/zr_0.2.2_linux_amd64.tar.gz"
+      sha256 "8d01861932eb4ade28d1bea90187671db749250737426cb139d5092ddc68a904"
       define_method(:install) do
         bin.install "zr"
         bash_completion.install "completions/zr.bash" => "zr"
@@ -45,8 +45,8 @@ class Zr < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.1/zr_0.2.1_linux_arm64.tar.gz"
-      sha256 "85400fd3df8514d16263573a1125a356b14a3980db8dbdb67b4cd79c6fd8d995"
+      url "https://github.com/matsuzj/zuora-cli/releases/download/v0.2.2/zr_0.2.2_linux_arm64.tar.gz"
+      sha256 "2e3520ec00ed9717519f8e882a20113c5608119f129843627fe409236e0473c6"
       define_method(:install) do
         bin.install "zr"
         bash_completion.install "completions/zr.bash" => "zr"
